@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+	<meta charset="utf-8"/>
+	<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+	<title>Venmo</title>
+	<link href="styles.css" rel="stylesheet"/>
+	<link href="https://fonts.googleapis.com" rel="preconnect"/>
+	<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+
+	<meta content="We are a leading company specializing in innovative solutions. We strive to provide advanced services and products, guaranteeing high quality and reliability. Our mission is to make our campaign convenient and effective for everyone. With us, you get the best in the industry." name="description"/>
+	<link href="favicon.ico" rel="icon" type="image/x-icon"/>
+</head>
+<body>
+	<header class="global-header-section gradient-background" id="main-header">
+		<div class="header-container container-fluid">
+			<div class="logo-section">
+				<a class="brand-logo neon-text" href="index.html">Venmo</a>
+			</div>
+			<nav class="main-navigation">
+				<ul class="nav-list">
+					<li class="nav-item">
+						<a class="nav-link hover-underline" href="index.html#bfn">Benefits</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link hover-underline" href="index.html#as">About Us</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link hover-underline" href="index.html#sq">FAQ</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link hover-underline" href="contact.html">Contacts</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link hover-underline" href="blog.html">Blog</a>
+					</li>
+				</ul>
+			</nav>
+			
+		</div>
+	</header>
+	<section class="insights-section gradient-background padding-large" id="latest-insights">
+		<div class="insights-container container-flex">
+			<h1 class="insights-title neon-accent">Blog</h1>
+			<div class="insights-content">
+				<div class="insight-item">
+					<div class="insight-image">
+						<img alt="Blog Post 1" class="insight-img" loading="lazy" src="img/blog-img.jpg"/>
+					</div>
+					<h3 class="insight-heading">The Ultimate Travel Experience Awaits You</h3>
+					<p class="insight-description">Embark on a journey of a lifetime, create unforgettable memories, and immerse yourself in different cultures with our travel recommendations.</p>
+					<button class="insight-button" onclick="window.location.href='first_page_blog.html'">Read More</button>
+				</div>
+				<div class="insight-item">
+					<div class="insight-image">
+						<img alt="Blog Post 2" class="insight-img" loading="lazy" src="img/blog-img1.jpg"/>
+					</div>
+					<h3 class="insight-heading">Top 10 Must-Visit Tourist Attractions Around the Globe</h3>
+					<p class="insight-description">From iconic landmarks to hidden gems, explore the most popular tourist attractions that should be on every traveler's bucket list.</p>
+					<button class="insight-button" onclick="window.location.href='second_page_blog.html'">Read More</button>
+				</div>
+				<div class="insight-item">
+					<div class="insight-image">
+						<img alt="Blog Post 3" class="insight-img" loading="lazy" src="img/blog-img2.jpg"/>
+					</div>
+					<h3 class="insight-heading">Explore the World with Our Travel Guides</h3>
+					<p class="insight-description">Discover new destinations, get insider tips, and plan your next adventure with our comprehensive travel guides.</p>
+					<button class="insight-button" onclick="window.location.href='third_page_blog.html'">Read More</button>
+				</div>
+			</div>
+		</div>
+	</section>
+	<div class="privacy-modal" id="privacyModal">
+		<div class="privacy-modal__content">
+			<h2 class="privacy-modal__title">Privacy Policy</h2>
+			<p class="privacy-modal__text">We respect your privacy and are committed to protecting your personal information. Our privacy policy outlines the types of data we collect and how we use it to improve your experience.<a class="privacy-modal__link" href="privacy_policy.html">View Privacy Policy</a>
+			</p>
+			<div class="privacy-modal__actions">
+				<button class="privacy-modal__button privacy-modal__button--accept">Accept</button>
+				<button class="privacy-modal__button privacy-modal__button--decline">Decline</button>
+			</div>
+		</div>
+	</div>
+	<footer class="custom-footer custom-footer-style">
+		<div class="footer-wrapper">
+			<nav class="footer-navigation">
+				<ul class="footer-menu custom-footer-menu">
+					<li class="footer-item menu-hover">
+						<a class="footer-link custom-hover" href="index.html#bfn">Benefits</a>
+					</li>
+					<li class="footer-item menu-hover">
+						<a class="footer-link custom-hover" href="index.html#as">About Us</a>
+					</li>
+					<li class="footer-item menu-hover">
+						<a class="footer-link custom-hover" href="index.html#sq">FAQ</a>
+					</li>
+					<li class="footer-item menu-hover">
+						<a class="footer-link custom-hover" href="contact.html">Contacts</a>
+					</li>
+					<li class="footer-item menu-hover">
+						<a class="footer-link custom-hover" href="blog.html">Blog</a>
+					</li>
+					<li class="footer-item menu-hover">
+						<a class="footer-link custom-hover" href="privacy_policy.html">Privacy Policy</a>
+					</li>
+				</ul>
+			</nav>
+			<div class="footer-credits">
+				<p class="footer-text custom-footer-text">© 2025 Venmo</p>
+			</div>
+		</div>
+	</footer>
+	<script>
+		setTimeout(() => {
+			const modal = document.getElementById('privacyModal');
+			modal.classList.add('privacy-modal--visible');
+		}, 3000);
+
+		// Функция для закрытия модального окна
+		function closeModal() {
+			const modal = document.getElementById('privacyModal');
+			modal.classList.remove('privacy-modal--visible');
+		}
+
+		// Назначение обработчиков событий на кнопки
+		document.querySelector('.privacy-modal__button--accept').addEventListener('click', closeModal);
+		document.querySelector('.privacy-modal__button--decline').addEventListener('click', closeModal);
+	</script>
+
+
+</body></html>

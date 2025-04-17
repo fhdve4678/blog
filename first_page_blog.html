@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+	<meta charset="utf-8"/>
+	<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+	<title>Venmo</title>
+	<link href="styles.css" rel="stylesheet"/>
+	<link href="https://fonts.googleapis.com" rel="preconnect"/>
+	<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+
+	<meta content="We are a leading company specializing in innovative solutions. We strive to provide advanced services and products, guaranteeing high quality and reliability. Our mission is to make our campaign convenient and effective for everyone. With us, you get the best in the industry." name="description"/>
+	<link href="favicon.ico" rel="icon" type="image/x-icon"/>
+</head>
+
+<body>
+	<header class="global-header-section gradient-background" id="main-header">
+		<div class="header-container container-fluid">
+			<div class="logo-section">
+				<a class="brand-logo neon-text" href="index.html">Venmo</a>
+			</div>
+			<nav class="main-navigation">
+				<ul class="nav-list">
+					<li class="nav-item">
+						<a class="nav-link hover-underline" href="index.html#bfn">Benefits</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link hover-underline" href="index.html#as">About Us</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link hover-underline" href="index.html#sq">FAQ</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link hover-underline" href="contact.html">Contacts</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link hover-underline" href="blog.html">Blog</a>
+					</li>
+				</ul>
+			</nav>
+			
+		</div>
+	</header>
+	<section class="content-block">
+		<div class="content-wrapper">
+			<div class="image-section">
+				<img alt="Healthy Eating" class="content-image" src="img/blog-img.jpg"/>
+			</div>
+			<div class="text-section">
+				<h1 class="content-title">The Ultimate Travel Experience Awaits You</h1>
+				<div class="content-description">
+					<p>Embark on a journey of a lifetime, create unforgettable memories, and immerse yourself in different cultures with our travel recommendations.</p>
+					<p>Venture to the mountain peaks with our all-inclusive travel packages. Explore serene landscapes, participate in thrilling activities, all while ensuring your comfort and safety.</p>
+					<p>Enjoy our worldwide travel itineraries crafted meticulously keeping in mind the diverse interests of travelers. From historic monuments to vibrant food markets, we've covered it all.</p>
+					<p>Use Venmo for seamless transactions while booking your holiday with us. It's easy, swift and gives you one less thing to worry about during your vacation.</p>
+					<p>Tropical beaches, peaceful countryside, bustling cities – whatever your preference, we have the perfect travel destination for you. Our dedicated team will support you every step of the way.</p>
+					<p>We take care of all the details of your trip so you can truly relax. With 24/7 support, a variety of payment options like Venmo, your convenience is our priority.</p>
+					<p>Travel broadens your horizons and our wide range of travel packages ensure that you have the chance to explore this wonderful world. We're here to make your travel dreams come true.</p>
+					<p>From solo trips to family vacations, we cater to all types of travel experiences. Our aim is to provide you a hassle-free travel experience, with support available at all times.</p>
+					<p>Experience the joys of traveling with our custom itineraries. We take care of everything from transportation to lodging, making sure your journey is nothing short of amazing.</p>
+				</div>
+			</div>
+		</div>
+	</section>
+	<div class="privacy-modal" id="privacyModal">
+		<div class="privacy-modal__content">
+			<h2 class="privacy-modal__title">Privacy Policy</h2>
+			<p class="privacy-modal__text">We respect your privacy and are committed to protecting your personal information. Our privacy policy outlines the types of data we collect and how we use it to improve your experience.<a class="privacy-modal__link" href="privacy_policy.html">View Privacy Policy</a>
+			</p>
+			<div class="privacy-modal__actions">
+				<button class="privacy-modal__button privacy-modal__button--accept">Accept</button>
+				<button class="privacy-modal__button privacy-modal__button--decline">Decline</button>
+			</div>
+		</div>
+	</div>
+	<footer class="custom-footer custom-footer-style">
+		<div class="footer-wrapper">
+			<nav class="footer-navigation">
+				<ul class="footer-menu custom-footer-menu">
+					<li class="footer-item menu-hover">
+						<a class="footer-link custom-hover" href="index.html#bfn">Benefits</a>
+					</li>
+					<li class="footer-item menu-hover">
+						<a class="footer-link custom-hover" href="index.html#as">About Us</a>
+					</li>
+					<li class="footer-item menu-hover">
+						<a class="footer-link custom-hover" href="index.html#sq">FAQ</a>
+					</li>
+					<li class="footer-item menu-hover">
+						<a class="footer-link custom-hover" href="contact.html">Contacts</a>
+					</li>
+					<li class="footer-item menu-hover">
+						<a class="footer-link custom-hover" href="blog.html">Blog</a>
+					</li>
+					<li class="footer-item menu-hover">
+						<a class="footer-link custom-hover" href="privacy_policy.html">Privacy Policy</a>
+					</li>
+				</ul>
+			</nav>
+			<div class="footer-credits">
+				<p class="footer-text custom-footer-text">© 2025 Venmo</p>
+			</div>
+		</div>
+	</footer>
+	<script>
+		setTimeout(() => {
+			const modal = document.getElementById('privacyModal');
+			modal.classList.add('privacy-modal--visible');
+		}, 3000);
+
+		// Функция для закрытия модального окна
+		function closeModal() {
+			const modal = document.getElementById('privacyModal');
+			modal.classList.remove('privacy-modal--visible');
+		}
+
+		// Назначение обработчиков событий на кнопки
+		document.querySelector('.privacy-modal__button--accept').addEventListener('click', closeModal);
+		document.querySelector('.privacy-modal__button--decline').addEventListener('click', closeModal);
+	</script>
+
+
+</body></html>
